@@ -3,9 +3,15 @@ h5{
 }
 
 .header_top{
-  min-height: 100px;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 80px;
   line-height: 80px;
-  background-color: #2C3E50
+  background-color: #2C3E50;
+  z-index: 1;
 }
 
 .container_60{
@@ -23,12 +29,18 @@ h5{
 .header_bottom{
   background-color: #1abc9c;
   min-height: 200px;
+  margin-top: 80px;
   padding: 25px 0;
 
 }
 
 img{
   max-height: 250px;
+}
+
+.line_blue{
+  max-height:0; 
+  border:2px solid #2C3E50;
 }
 
  .col-xs-12 img{
@@ -38,6 +50,10 @@ img{
 
 .about{
   background-color: #1abc9c;
+}
+
+.about button{
+  margin-bottom: 20px;
 }
 
 .btn_green{
@@ -59,21 +75,20 @@ textarea{
 
 footer{
   min-height: 100px;
-  background-color: #2C3E50
+  background-color: #3A546D;
 }
-
-.footer_top,
-.footer_middle,
-.footer_bottom{
-  font-size: 20px;
-  padding-top: 10px;
-}
-
-i{
-  max-width: 20px;
-  max-height: 20px;
-  border:1px solid white;
+a > i{
+  color: white;
 }
 p > a {
   color:#1abc9c;
+}
+
+.copy{
+  min-height: 50px;
+  background-color: #2C3E50;
+}
+
+.copy > h6{
+  padding-top: 20px;
 }
